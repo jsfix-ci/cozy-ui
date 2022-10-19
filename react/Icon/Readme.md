@@ -543,6 +543,8 @@ import Icon from 'cozy-ui/transpiled/react/Icon'
 import Typography from 'cozy-ui/transpiled/react/Typography'
 
 import CozyIcon from 'cozy-ui/transpiled/react/Icons/Cozy'
+import CozyLockIcon from 'cozy-ui/transpiled/react/Icons/CozyLock'
+import CozyReleaseIcon from 'cozy-ui/transpiled/react/Icons/CozyRelease'
 import CloudBrokenIcon from 'cozy-ui/transpiled/react/Icons/CloudBroken'
 import CozyLogoIcon from 'cozy-ui/transpiled/react/Icons/CozyLogo'
 import DeviceLaptopIcon from 'cozy-ui/transpiled/react/Icons/DeviceLaptop'
@@ -572,6 +574,8 @@ import KeychainIcon from 'cozy-ui/transpiled/react/Icons/Keychain'
 
 const icons = [
   CozyIcon,
+  CozyLockIcon,
+  CozyReleaseIcon,
   CloudBrokenIcon,
   CozyLogoIcon,
   DeviceLaptopIcon,
@@ -637,7 +641,7 @@ import Icon from 'cozy-ui/transpiled/react/Icon'
 import Typography from 'cozy-ui/transpiled/react/Typography'
 import Sprite from 'cozy-ui/transpiled/react/Icon/Sprite'
 
-const availableIcons = ['cozy', 'cloud-broken', 'cozy-logo', 'device-laptop', 'device-phone', 'device-tablet', 'device-browser', 'file-type-audio', 'file-type-bin', 'file-type-code', 'file-type-files', 'file-type-folder', 'file-type-image', 'file-type-note', 'file-type-pdf', 'file-type-sheet', 'file-type-slide', 'file-type-text', 'file-type-video', 'file-type-zip', 'forbidden-sign', 'google', 'logout-large', 'top-select', 'bottom-select', 'check-white', 'dash-white', 'keychain']
+const availableIcons = ['cozy', 'cozy-lock', 'cozy-release', 'cloud-broken', 'cozy-logo', 'device-laptop', 'device-phone', 'device-tablet', 'device-browser', 'file-type-audio', 'file-type-bin', 'file-type-code', 'file-type-files', 'file-type-folder', 'file-type-image', 'file-type-note', 'file-type-pdf', 'file-type-sheet', 'file-type-slide', 'file-type-text', 'file-type-video', 'file-type-zip', 'forbidden-sign', 'google', 'logout-large', 'top-select', 'bottom-select', 'check-white', 'dash-white', 'keychain']
 
 ;
 
