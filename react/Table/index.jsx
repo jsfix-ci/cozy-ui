@@ -1,39 +1,48 @@
-import React from 'react'
-import styles from './styles.styl'
+import React, { forwardRef } from 'react'
 import cx from 'classnames'
 
-export const Table = props => {
-  const { className, ...rest } = props
+import styles from './styles.styl'
 
-  return <div className={cx(styles.Table, className)} {...rest} />
-}
+export const Table = forwardRef(({ className, ...props }, ref) => {
+  return <div ref={ref} className={cx(styles.Table, className)} {...props} />
+})
 
-export const TableHead = props => {
-  const { className, ...rest } = props
+Table.displayName = 'Table'
 
-  return <div className={cx(styles.TableHead, className)} {...rest} />
-}
+export const TableHead = forwardRef(({ className, ...props }, ref) => {
+  return (
+    <div ref={ref} className={cx(styles.TableHead, className)} {...props} />
+  )
+})
 
-export const TableBody = props => {
-  const { className, ...rest } = props
+TableHead.displayName = 'TableHead'
 
-  return <div className={cx(styles.TableBody, className)} {...rest} />
-}
+export const TableBody = forwardRef(({ className, ...props }, ref) => {
+  return (
+    <div ref={ref} className={cx(styles.TableBody, className)} {...props} />
+  )
+})
 
-export const TableRow = props => {
-  const { className, ...rest } = props
+TableBody.displayName = 'TableBody'
 
-  return <div className={cx(styles.TableRow, className)} {...rest} />
-}
+export const TableRow = forwardRef(({ className, ...props }, ref) => {
+  return <div ref={ref} className={cx(styles.TableRow, className)} {...props} />
+})
 
-export const TableCell = props => {
-  const { className, ...rest } = props
+TableRow.displayName = 'TableRow'
 
-  return <div className={cx(styles.TableCell, className)} {...rest} />
-}
+export const TableCell = forwardRef(({ className, ...props }, ref) => {
+  return (
+    <div ref={ref} className={cx(styles.TableCell, className)} {...props} />
+  )
+})
 
-export const TableHeader = props => {
-  const { className, ...rest } = props
+TableCell.displayName = 'TableCell'
 
-  return <div className={cx(styles.TableHeader, className)} {...rest} />
-}
+export const TableHeader = forwardRef(({ className, ...props }, ref) => {
+  return (
+    <div ref={ref} className={cx(styles.TableHeader, className)} {...props} />
+  )
+})
+
+TableHeader.displayName = 'TableHeader'
